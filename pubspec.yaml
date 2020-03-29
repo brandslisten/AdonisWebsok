@@ -12,7 +12,9 @@ environment:
 
 dependencies:
   meta: ^1.1.8
-  websok: ^2.1.1
+  websok:
+    git:
+      url: https://github.com/rdkr-smart-media/Websok.git
 
 dev_dependencies:
   test: ^1.9.4
