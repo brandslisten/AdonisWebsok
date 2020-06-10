@@ -292,10 +292,10 @@ abstract class AdonisWebsok<S extends Websok> {
     return Future(() => this.unsubscribe(topic, action));
   }
 
-  /// Closes the conexion with the socket.
+  /// Closes the connection with the socket.
   void close() {
     this.isActive = false;
-    this.pingPong.cancel();
-    this.socket.close();
+    this.pingPong?.cancel();
+    this.socket?.close();
   }
 }
